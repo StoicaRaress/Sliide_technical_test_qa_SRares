@@ -26,6 +26,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
+
     implementation deps.dagger.runtime
     implementation deps.dagger.android
     implementation deps.dagger.android_support
@@ -67,4 +68,5 @@ dependencies {
     androidTestImplementation deps.espresso.junit_ext
     androidTestImplementation deps.espresso.core
     androidTestImplementation deps.test_rules
+    androidTestImplementation('androidx.test.espresso:espresso-web:3.2.0')
 }
