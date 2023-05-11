@@ -38,6 +38,7 @@ class NewsInstrumentedTest : NewsTestBase() {
             .perform(clearText(), typeText(NewsInstrumentedTest.VALID_USER_PASSWORD))
         onView(withId(R.id.buttonLogin))
             .perform(click())
+
         Thread.sleep(2000)
         onView(allOf(withId(R.id.recyclerViewNews), hasMinimumChildCount(3)))
             .check(matches(isDisplayed()))
